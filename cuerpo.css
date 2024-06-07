@@ -1,0 +1,251 @@
+*{
+    margin:0px;
+    padding:0px;
+    
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto',arial, sans-serif;
+    font-size: 15px;	
+    background-color: #e5e5e5;		
+}
+img{
+    opacity: 0.8;	
+    width: 100vw;
+
+}
+div#contenedor{
+    position: relative;			
+    top: 85px;
+    z-index: -1;
+
+
+}
+div#contenedor div#visorImagen {
+    height: 500px;
+    white-space: nowrap; /*lo que quiero es que no se divida, por defecto es normal. es lo que hace que las imágenes se coloquen en horizontal*/
+    overflow: hidden; /*oculta lo que este fuera del with, si pongo scroll me aparecen las barras. */
+
+}
+
+
+main div.banner{
+    margin:auto;
+    width:800px;
+    height:100px;
+    padding:25px;
+    position:relative;
+    background-color:rgba(255,255,255, 0.70 );
+    border-radius:4px;
+    font-size:48px;
+    text-align:center;
+    font-weight:300;
+    margin-top:-25%;
+}	
+
+
+main div p.textoBannerGrande{
+    text-align:center;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0;
+}
+
+div.contenedorNoticias {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(155, 255, 88, 0.5);
+    border-radius: 4px 4px 4px 4px;
+    margin-top: 35px;
+       left: 50%;
+       margin-left: -500px;
+    width: 1000px;
+    
+
+   
+}	
+div.cajaNoticia {
+    margin: 20px 0px 20px 20px;
+    width: 306px;
+    max-width: 306px;
+    background-color: #adf2fd;
+    border-radius: 4px;
+    border-bottom: 2px solid #adf2fd;
+    float: left;
+    opacity: 1.0;
+    -webkit-box-shadow: 0px 20px 25px -8px rgba(196, 196, 196, 1);
+    -moz-box-shadow: 0px 20px 25px -8px rgba(196, 196, 196, 1);
+    box-shadow: 0px 20px 25px -8px rgba(196, 196, 196, 1);
+    height: 650px; /* Ajusta la altura */
+}
+div.cajaNoticia div.imagenNoticia img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: 200px; /* Establece una altura fija para todas las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que se ajuste dentro de su contenedor manteniendo la relación de aspecto */
+}
+div.cajaNoticia div.contenidoNoticia {
+    height: 475px; /* Ajusta la altura de la caja interna */
+}
+
+div.cajaNoticia p.textoNoticia {
+    padding: 12px 20px 15px 20px;
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 300;
+    height: 340px; /* Ajusta la altura del texto */
+    overflow: hidden; /* Oculta cualquier exceso de texto */
+}
+
+div.cajaNoticiaGrandesViajes{
+    margin:20px 0px 20px 20px;
+    width:470px;
+    max-width:612px;
+    background-color:#c3ecfd;
+    border-radius:4px;
+    border-bottom:2px solid #c3ecfd;
+    float:left;
+    opacity: 1.0;
+    -webkit-box-shadow: 0px 12px 15px -8px rgba(196,196,196,1);
+    -moz-box-shadow: 0px 12px 15px -8px rgba(196,196,196,1);
+    box-shadow: 0px 12px 15px -8px rgba(196,196,196,1);
+}
+
+div p.tituloNoticia{
+    font-size:20px;
+    font-weight:300;
+    color:#333;
+    padding:20px 20px 10px 20px;
+}
+div p.subtituloNoticia{
+    font-size:16px;
+    font-weight:300;
+    color:#666;
+    padding:5px 0px 10px 20px;
+}
+
+div.imagenNoticia img{
+    width:100%;	
+    height: 100%;
+}		
+div.imagenNoticia img{
+    max-width:100%;
+        
+}
+div.contenidoNoticiaGrandesViajes{
+    height:480px; 
+    padding-top:10px;
+}
+span.spanGrandesViajes{
+    color:#f49e00; 
+    font-size:14px;
+}
+p.textoNoticia{
+    padding: 12px 20px 15px 20px;
+    font-size:14px;
+    text-align:justify;
+    height:110px;
+    font-weight:300;
+}
+div.informacion{
+    
+    border-top:0px solid #f4f4f4;
+    color:#666;
+    font-weight:300;
+    text-align:center;	
+    padding:10px 10px 10px 10px;
+    border-bottom-right-radius:4px;
+    border-bottom-left-radius:4px;	
+    
+}
+
+div.informacion ul{
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    list-style-type: none; /*Le quito boliches y márgenes*/
+    
+}
+div.informacion ul li{
+    display: inline-block;	
+}
+div.informacion ul li a{
+    padding: 10px;
+    font-size: 20px;
+}
+div ul li a i{
+    color: white;
+    float: right;
+    border-radius: 50px;
+    margin-bottom: 7px;
+    padding: 7px;
+    
+}
+div ul li a i.fa-eye{
+    background-color: #009688;	
+    
+    
+}
+div ul li a i.fa-envelope
+{
+    background-color: #11a9cc;	
+
+}
+
+p{
+    
+    text-align: justify;
+}
+
+/* Ventana Modal*/	
+
+div.ventanaModal {
+    display: flex; /*esto es para centrar contenedorMoral*/
+    justify-content: center; /*centro horizontalmente contenedorMoral*/
+    align-items: center; /*Centro verticalmente contenedorMoral*/
+    visibility:hidden; /*Y esto es lo que hace que originalmente hace que ya no se vea*/
+    opacity: 0; /*si no quiero que se vea al principio la visible la opacidad tiene que ser cero, OJO que el contenedor está*/
+    transition: all 2s; /*si ponemos all se aplica al abrir y al cerrar, y si lo pongo en la clase visible puedo poner velocidades diferentes*/
+    position: fixed; 
+    z-index: 1; /*está por delante del body*/
+    padding-top: 30%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
+    overflow: auto; /*Por si tengo contenido dentro del contenedor que exceda del contenido, pongo scroll automático */
+
+
+}
+div.ventanaModal.visible 
+{
+    visibility: visible;
+    opacity: 1 ; /*esta propiedad se pone para que se pueda animar*/
+    transition: all 2s;
+
+}	
+div.ventanaModal div.contenedorMoral {
+    background-color: white;
+    padding: 20px;
+    border: 2px solid lightgray;
+    box-shadow: 2px 2px 2px darkred;
+    width: 70%;
+}
+
+div.ventanaModal button.BotonCerrar{
+    background-color: transparent;
+    padding: 0.4em;
+    border: none;
+    outline: none; 
+    font-size: 1.2em;
+    cursor: pointer;
+    float:right;
+    margin: 0
+}
+
+.imagenVentanaModal {
+    max-width: 80%; /* Ajusta el ancho máximo de la imagen */
+    height: auto;   /* Mantén la relación de aspecto de la imagen */
+    margin: 20px auto; /* Centra la imagen con margen superior e inferior */
+    display: block; /* Asegura que la imagen sea un bloque para aplicar margin auto */
+}

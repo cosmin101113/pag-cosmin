@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TRILOGÍAS</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3/css/all.min.css">
+	<link href="menu.css" rel="stylesheet" type="text/css" />
+	<link href="cuerpo.css" rel="stylesheet" type="text/css" />
+	<script src="menu.js" ></script>
+	<script src="cuerpo.js" ></script>
+	
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+	
+	<style type="text/css">
+		
+	</style>
+	<script type="text/javascript">
+		
+
+	</script>
+</head>
+<body onscroll="calcularBarraProgreso();" >
+<header>
+
+	
+	<button id="boton" onclick="desplegarPlegarMenu();" ><i class="fas fa-plus"></i></button>
+</header>
+<nav id="navMenu" onmouseover="desplegarMenu();" >
+
+<ul id="menu" >
+	<li><a id="inicio" href="index.html"><i class="fas fa-home"></i><span class="textoMenu">INICIO</span></a></li>
+	<li><a id="europa" href="sagas.html"><i class="fas fa-eye"></i><span class="textoMenu">SAGAS</span></a></li>
+	<li><a id="vuelos" href="series.html"><i class="fas fa-plus"></i><span class="textoMenu">SERIES</span></a></li>
+
+</ul>
+
+</nav>
+<main>
+
+<div id="contenedor">
+
+	<img id="visorImagen" >
+	
+	<div class="banner">
+		
+		<p class="textoBannerGrande">Películas</p>
+	</div>
+
+  <!-- contenedorNoticias va contener las tres cajitas de noticias-->
+  <div class="contenedorNoticias">
+  		<!-- Noticia 1-->
+		<div class="cajaNoticia">
+			<p class="tituloNoticia">STAR WARS</p>
+       		<p class="subtituloNoticia"><br>"QUE LA FUERZA TE ACOMPAÑE."</p>  
+       		<div class="contenidoNoticia">
+       			<div class="imagenNoticia"><img  src="imagenes/wars.jpg" ></div>
+       			<p class="textoNoticia">
+					La trilogía original de Star Wars sigue la batalla épica entre la Alianza Rebelde y el Imperio Galáctico. Dicha trilogía consta de 9 películas principales mas series y películas secundarias todas ellas centradas en la lucha contra el Imperio de los Jedi y la Resistencia. Episodio I: La amenaza fantasma, Episodio II: El ataque de los clones, Episodio III: La venganza de los sith, Episodio IV: Una nueva esperanza, Episodio V: El imperio contraataca, Episodio VI: El retorno del Jedi, El despertar de la Fuerza, Los últimos Jedi, El ascenso de Skywalker. </p>
+       			
+       		</div>	
+       		<div class="informacion">
+	       		<ul >
+	       			<li><a onclick="AbrirVentanaModal('Verde')" href="#"><i class="fas fa-eye"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       	
+	   			</ul>
+			</div>	
+     	</div>
+
+		<!-- Noticia 2-->
+		<div class="cajaNoticia">
+			<p class="tituloNoticia">HARRY POTTER</p>
+       		<p class="subtituloNoticia"><br>"ES LEVIÓSA. NO LEVIOSÁ."</p>  
+       		<div class="contenidoNoticia">
+       			<div class="imagenNoticia"><img  src="imagenes/harry.png" ></div>
+       			<p class="textoNoticia">El argumento de la saga gira en torno a la lucha de Harry Potter para derrotar a Lord Voldemort que, además de haber asesinado a los padres del pequeño mago, quiere conquistar el mundo mágico. Se divide en 8 películas: Harry Potter y la piedra filosofal, Harry Potter y la cámara secreta, Harry Potter y el prisionero de Azkaban, Harry Potter y el cáliz de fuego, Harry Potter y la Orden del Fénix, Harry Potter y el misterio del príncipe, Harry Potter y las reliquias de la Muerte 1 y Harry Potter y las reliquias de la Muerte 2.</p>
+       		</div>	
+       		<div class="informacion">
+	       		<ul >
+	       			<li><a onclick="AbrirVentanaModal('Azul')" href="#" ><i class="fas fa-eye"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       	
+	   			</ul>
+			</div>	
+		</div>
+
+		<!-- Noticia 3-->
+		<div class="cajaNoticia">
+			<p class="tituloNoticia">EL SEÑOR DE LOS ANILLOS</p>
+       		<p class="subtituloNoticia">"EL ANILLO VINO A MÍ. TODO MÍO. MI VIDA. TODO MÍO. MI TESSSORO."</p>  
+       		<div class="contenidoNoticia">
+       			<div class="imagenNoticia"><img  src="imagenes/anillo.jpg" ></div>
+       			<p class="textoNoticia">Cuenta el viaje del protagonista principal, Frodo Bolsón, Hobbit de la Comarca, para destruir el Anillo Único y la consiguiente guerra que provocará el enemigo para recuperarlo, ya que es la principal fuente de poder de su creador, el señor oscuro Sauron. La saga se divide en 3 películas: El Señor de los Anillos: La Comunidad del Anillo, El Señor de los Anillos: Las Dos Torres, El Señor de los Anillos: El Retorno del Rey.</p>
+       		</div>	
+       		<div class="informacion">
+	       		<ul >
+	       			<li><a onclick="AbrirVentanaModal('Naranja')" href="#" ><i class="fas fa-eye"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	   
+	   			</ul>
+			</div>	
+		</div>
+
+	</div>
+
+</div>	
+
+</main>
+
+<div id="ventanaModalVerde" class="ventanaModal">
+
+	<div id="contenedorMoralVerde" class="contenedorMoral">
+		<button class="BotonCerrar" onclick="cerrarVentanaModal('Verde')" ><i class="fas fa-times"></i></button>
+<main>	
+<h1>STAR WARS</h1><br>
+<p class="parrafoVentanaModal">
+	Las películas de Star Wars han sido un fenómeno con millones de seguidores y fanáticos desde el comienzo. Siendo uno de los ejemplos más importantes de la space opera (subgénero de ciencia ficción) Star Wars se ha convertido en una parte esencial de la cultura popular, así como una de las películas de mayor recaudación en taquilla de todos los tiempos y una de las mas aclamadas por el público en general.</p>
+
+<p>
+<br>	
+</p>
+<p class="parrafoVentanaModal">
+	Gogre  Lucas tomó los elementos más exitosos de la época en el cine e hizo un gran mash-up que empleaba lo más innovador en efectos especiales para la época.
+
+	Podemos ver en Star Wars elementos de las películas de samurais blandiendo espadas (espadas láser), de los famosos westerns, y de peliculas épicas de guerra (basta ver los uniformes de los soldados imperiales).	
+</p>
+<figure>
+	<img class="imagenVentanaModal" src="imagenes\wars2.webp">
+</figure>
+<br>
+<br>
+<ul class="segunda_lista">
+	<li>PELÍCULAS POR ORDEN DE EPISODIOS</li>
+		<ul class="lista_monumentos">
+			<br>
+			<li>Star Wars: Episodio I - La amenaza fantasma (1999):
+				Dos caballeros Jedi descubren a Anakin Skywalker, un niño con un gran potencial en la Fuerza, mientras intentan proteger a la Reina Amidala de una invasión.</li>
+				<br>
+				<li>Star Wars: Episodio II - El ataque de los clones (2002):
+				Diez años después, Anakin Skywalker se convierte en aprendiz Jedi y protege a la Senadora Amidala, mientras la galaxia se dirige hacia una guerra civil.</li>
+				<br>
+				<li>Star Wars: Episodio III - La venganza de los Sith (2005):
+				Anakin Skywalker sucumbe al Lado Oscuro y se convierte en Darth Vader, mientras el Emperador Palpatine toma el control de la galaxia y destruye la Orden Jedi.</li>
+				<br>
+				<li>Star Wars: Episodio IV - Una nueva esperanza (1977):
+				Luke Skywalker, un joven granjero, se une a la Alianza Rebelde para rescatar a la Princesa Leia y destruir la Estrella de la Muerte, una poderosa estación espacial del Imperio.</li>
+				<br>
+				<li>Star Wars: Episodio V - El imperio contraataca (1980):
+				Tras la destrucción de la Estrella de la Muerte, el Imperio persigue a los rebeldes. Luke Skywalker entrena con el maestro Yoda, mientras sus amigos enfrentan peligros y traiciones.</li>
+				<br>
+				<li>Star Wars: Episodio VI - El retorno del Jedi (1983):
+				Los rebeldes planean un ataque final contra el Imperio. Luke Skywalker confronta a Darth Vader y al Emperador Palpatine, buscando redención y la caída del Imperio.</li>
+				<br>
+				<li>Star Wars: Episodio VII - El despertar de la Fuerza (2015):
+				Treinta años después, la Primera Orden ha surgido de las cenizas del Imperio. Rey, una chatarrera, descubre su conexión con la Fuerza mientras busca a Luke Skywalker, el último Jedi.</li>
+				<br>
+				<li>Star Wars: Episodio VIII - Los últimos Jedi (2017):
+				Rey entrena con Luke Skywalker, quien ha exiliado. La Resistencia lucha por sobrevivir contra la Primera Orden, mientras Kylo Ren enfrenta sus propios conflictos internos.</li>
+				<br>
+				<li>Star Wars: Episodio IX - El ascenso de Skywalker (2019):
+				La Resistencia hace su último esfuerzo para derrotar a la Primera Orden y enfrentar la amenaza resurgente del Emperador Palpatine. Rey descubre su verdadero linaje y lucha por el destino de la galaxia.</li>
+		</ul>	
+</ul>	<br>
+<p class="guiaCierre">"NO, YO SOY TU PADRE."</p>
+</main>
+
+	</div>
+</div>
+
+<div id="ventanaModalAzul" class="ventanaModal">
+
+	<div id="contenedorMoralAzul" class="contenedorMoral">
+<button class="BotonCerrar" onclick="cerrarVentanaModal('Azul')" ><i class="fas fa-times"></i></button>
+<main class="ventanaModal">
+<h1>HARRY POTTER</h1><br>
+<p class="parrafoVentanaModal">
+	En este caso, las peliculas de Harry Potter han tenido un éxito mundial gracias a la detallada construcción del mundo mágico, con sus escuelas, criaturas, hechizos y mitología, también ofrece una escapatoria fascinante y rica en imaginación y una alta calidad de producción y efectos visuales innovadores que dieron vida a la magia y los escenarios de los libros de manera impresionante, además de contar con un elenco de actores talentosos, incluidos Daniel Radcliffe, Emma Watson y Rupert Grint, así como actores veteranos como Alan Rickman, Maggie Smith y Ralph Fiennes,que aportaron actuaciones memorables.
+
+</p>
+
+<p>
+<br>	
+</p>
+<p class="parrafoVentanaModal">
+	Las películas están basadas en la exitosa serie de libros de J.K. Rowling, que ya contaban con una base de fanáticos devotos antes del estreno de las películas, lo cual facilitó mucho el marketing y la expectación a que salieran las películas.
+</p>
+<figure>
+	<img class="imagenVentanaModal" src="imagenes\harry2.jpeg">
+</figure>
+<br>
+<ul class="segunda_lista">
+	<li>PELÍCULAS SEGUN EL ORDEN CRONOLÓGICO</li>
+		<ul class="lista_monumentos">
+			<br>
+			<li>Harry Potter y la piedra filosofal (2001):
+				Harry descubre que es un mago y asiste a la escuela de magia Hogwarts, donde hace amigos y enemigos, y descubre la existencia de la piedra filosofal, un objeto con poderes mágicos extraordinarios.</li>
+				<br>
+				<li>Harry Potter y la cámara secreta (2002):
+				Harry regresa a Hogwarts y descubre una cámara secreta en la escuela que alberga un peligroso monstruo. Junto a sus amigos, Harry investiga los ataques a los estudiantes.</li>
+				<br>
+				<li>Harry Potter y el prisionero de Azkaban (2004):
+				Harry se entera de que Sirius Black, un prisionero fugado de Azkaban, está buscándolo. Mientras tanto, Harry descubre más sobre su pasado y la traición de sus padres.</li>
+				<br>
+				<li>Harry Potter y el cáliz de fuego (2005):
+				Harry es inexplicablemente inscrito en el Torneo de los Tres Magos, una peligrosa competencia mágica. Durante el torneo, se enfrenta a varios desafíos y descubre el regreso de Lord Voldemort.</li>
+				<br>
+				<li>Harry Potter y la Orden del Fénix (2007):
+				El Ministerio de Magia niega el regreso de Voldemort, y Harry y sus amigos forman la Orden del Fénix para luchar contra las fuerzas oscuras. Harry también lidia con visiones y conexiones con Voldemort.</li>
+				<br>
+				<li>Harry Potter y el misterio del príncipe (2009):
+				Dumbledore le muestra a Harry recuerdos sobre Voldemort para descubrir cómo derrotarlo. Harry encuentra un libro de pociones perteneciente al "Príncipe Mestizo" y profundiza su relación con Ginny Weasley.</li>
+				<br>
+				<li>Harry Potter y las reliquias de la muerte: Parte 1 (2010):
+				Harry, Ron y Hermione abandonan Hogwarts para encontrar y destruir los Horrocruxes, objetos que contienen partes del alma de Voldemort. En su búsqueda, descubren la leyenda de las Reliquias de la Muerte.</li>
+				<br>
+				<li>Harry Potter y las reliquias de la muerte: Parte 2 (2011):
+				La batalla final entre Harry y Voldemort tiene lugar en Hogwarts. Harry y sus amigos deben destruir los Horrocruxes restantes para acabar con Voldemort de una vez por todas.</li>
+		</ul>
+</ul>	<br>
+<p class="guiaCierre">"NO TODOS LOS MAGOS SON BUENOS, ALGUNOS SE MALOGRAN."</p>
+</main>
+	</div>
+</div>
+
+
+<div id="ventanaModalNaranja" class="ventanaModal">
+
+	<div id="contenedorMoralNaranja" class="contenedorMoral">
+		<button class="BotonCerrar" onclick="cerrarVentanaModal('Naranja')" ><i class="fas fa-times"></i></button>
+<main>	
+<h1>EL SEÑOR DE LOS ANILLOS</h1><br>
+<p class="parrafoVentanaModal">
+	Las películas del Señor de los Anillos han tendio tanto éxito debido a personajes memorables como Frodo, Aragorn, Gandalf y Legolas que son muy queridos y están bien desarrollados, con arcos narrativos que evolucionan de manera significativa a lo largo de la historia, además de que las películas dirigidas por Peter Jackson son visualmente impresionantes, con efectos especiales innovadores, paisajes deslumbrantes y una atención meticulosa a los detalles. Además, el elenco talentoso y las actuaciones destacadas que contribuyen enormemente a su éxito. </p>
+
+<p>
+<br>	
+</p>
+<p class="parrafoVentanaModal">
+	Rica mitología y construcción del mundo: J.R.R. Tolkien creó un mundo detallado y complejo con una historia, lenguajes, y culturas ricas. La Tierra Media es un escenario fascinante y profundo que captura la imaginación de los lectores y espectadores y también la saga aborda temas como la lucha entre el bien y el mal, la amistad, el sacrificio, el valor y la perseverancia. Estos temas resuenan profundamente con una audiencia amplia. 	
+</p>
+<figure>
+	<img class="imagenVentanaModal" src="imagenes\anillo2.jpg">
+</figure>
+<br>
+<br>
+<ul class="segunda_lista">
+	<li>EL SEÑOR DE LOS ANILLOS ORDEN CRONOLÓGICO DE LAS PELÍCULAS</li>
+	<br>
+		<ul class="lista_monumentos">
+			<li>El Señor de los Anillos: La Comunidad del Anillo (2001):
+				Frodo Bolsón, un hobbit del tranquilo pueblo de la Comarca, hereda un anillo mágico y peligroso de su tío Bilbo. El mago Gandalf descubre que el anillo es el Anillo Único, creado por el malvado Sauron para dominar la Tierra Media. Frodo se une a un grupo diverso, la Comunidad del Anillo, que incluye hobbits, humanos, un enano y un elfo, para llevar el anillo al Monte del Destino, donde puede ser destruido. A lo largo de su viaje, enfrentan numerosos peligros y amenazas.</li>
+				<br>
+				<li>El Señor de los Anillos: Las Dos Torres (2002):
+				La Comunidad se ha disuelto. Frodo y Sam continúan su viaje hacia Mordor, guiados por la criatura Gollum, el antiguo portador del Anillo que ansía recuperarlo. Mientras tanto, Aragorn, Legolas y Gimli buscan a los hobbits Merry y Pippin, capturados por orcos. La guerra se extiende por la Tierra Media, y la Fortaleza de Helm's Deep se convierte en el escenario de una batalla épica. Los Ents, antiguos pastores de árboles, se unen a la lucha tras ser persuadidos por Merry y Pippin.</li>
+				<br>
+				<li>El Señor de los Anillos: El Retorno del Rey (2003):
+				La batalla final por la Tierra Media se acerca. Frodo y Sam, con la ayuda de Gollum, avanzan hacia el Monte del Destino. Mientras tanto, Aragorn debe reclamar su lugar como rey de Gondor para unir a los pueblos libres contra Sauron. La ciudad de Minas Tirith es sitiada, y la batalla en los Campos de Pelennor es decisiva. Frodo finalmente llega al Monte del Destino, donde debe enfrentarse a Gollum y su propia tentación para destruir el Anillo. La destrucción del Anillo provoca la caída de Sauron y trae la paz a la Tierra Media.</li>
+		</ul>
+</ul>	<br>
+<p class="guiaCierre">"EL QUE ROMPE ALGO PARA AVERIGUAR QUÉ ES, HA ABANDONADO EL CAMINO DE LA SABIDURÍA."</p>
+</main>
+	</div>
+</div>
+
+
+</body>
+</html>
