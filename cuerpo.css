@@ -8,7 +8,18 @@ body{
     padding: 0;
     font-family: 'Roboto',arial, sans-serif;
     font-size: 15px;	
-    background-color: #e5e5e5;		
+    background-color: #e5e5e5;	
+
+}
+.index-body{
+    background-image: url(imagenes/arcane2.webp);
+    background-repeat: repeat-x;
+    background-size: cover;	
+}
+.sagas-body{
+    background-image: url(imagenes/anillo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;	
 }
 img{
     opacity: 0.8;	
@@ -45,28 +56,42 @@ main div.banner{
 }	
 
 
-main div p.textoBannerGrande{
+div p.textoBannerGrande{
     text-align:center;
     padding: 0;
-    padding-top: 10px;
+    padding-top: 0px;
     margin: 0;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 
 div.contenedorNoticias {
     position: absolute;
     text-align: center;
     background-color: rgba(155, 255, 88, 0.5);
-    border-radius: 4px 4px 4px 4px;
+    border-radius: 4px;
     margin-top: 35px;
-       left: 50%;
-       margin-left: -500px;
-    width: 1000px;
-    
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1100px; /* Puedes ajustar esto según tu preferencia */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: space-between; /* Distribuye los elementos con un espacio uniforme */
+}
 
-   
-}	
+@media (max-width: 1180px) {
+    div.contenedorNoticias {
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+}
+
+
+
+
 div.cajaNoticia {
-    margin: 20px 0px 20px 20px;
+    margin: 2%;
     width: 306px;
     max-width: 306px;
     background-color: #adf2fd;
@@ -98,7 +123,7 @@ div.cajaNoticia p.textoNoticia {
 }
 
 div.cajaNoticiaGrandesViajes{
-    margin:20px 0px 20px 20px;
+    margin:2%;
     width:470px;
     max-width:612px;
     background-color:#c3ecfd;
@@ -250,11 +275,3 @@ div.ventanaModal button.BotonCerrar{
     display: block; /* Asegura que la imagen sea un bloque para aplicar margin auto */
 }
 
-.lista_monumentos {
-    text-align: center; /* Centra horizontalmente los elementos de la lista */
-    padding: 0; /* Elimina el relleno predeterminado de la lista */
-}
-
-.lista_monumentos li {
-    margin: 5px 0; /* Ajusta el espacio entre los elementos de la lista */
-}

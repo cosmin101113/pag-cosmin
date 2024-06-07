@@ -1,196 +1,268 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<title>MEJOR VALORADOS</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="fontawesome-free-5.15.3/css/all.min.css">
 	<link href="menu.css" rel="stylesheet" type="text/css" />
 	<link href="cuerpo.css" rel="stylesheet" type="text/css" />
-	<script src="menu.js"></script>
-
-	<link
-		href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900"
-		rel="stylesheet" type="text/css">
-
+	<script src="menu.js" ></script>
+	<script src="cuerpo.js" ></script>
+	
+	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900" rel="stylesheet" type="text/css">
+	
 	<style type="text/css">
-		/* Ensure body is scrollable */
-		body {
-			overflow-y: scroll;
-		}
+		
+
 	</style>
 	<script type="text/javascript">
-		function calcularBarraProgreso() {
-			// Your script here
-		}
+		
 
-		function desplegarPlegarMenu() {
-			// Your script here
-		}
-
-		function desplegarMenu() {
-			// Your script here
-		}
-
-		function AbrirVentanaModal(color) {
-			var modal = document.getElementById('ventanaModal' + color);
-			modal.classList.add('visible');
-		}
-
-		function cerrarVentanaModal(color) {
-			var modal = document.getElementById('ventanaModal' + color);
-			modal.classList.remove('visible');
-		}
 	</script>
 </head>
+<body class="index-body" >
 
-<body>
-	<nav id="navMenu" onmouseover="desplegarMenu();">
-		<ul id="menu">
-			<li><a id="inicio" href="index.html"><i class="fas fa-home"></i><span class="textoMenu">INICIO</span></a>
-			</li>
-			<li><a id="europa" href="sagas.html"><i class="fas fa-eye"></i><span class="textoMenu">SAGAS</span></a></li>
-			<li><a id="vuelos" href="series.html"><i class="fas fa-plus"></i><span class="textoMenu">SERIES</span></a>
-			</li>
+<nav id="navMenu"  >
+
+<ul id="menu" >
+	<li><a id="inicio" href="index.html"><i class="fas fa-home"></i><span class="textoMenu">INICIO</span></a></li>
+	<li><a id="europa" href="sagas.html"><i class="fas fa-eye"></i><span class="textoMenu">SAGAS</span></a></li>
+	<li><a id="vuelos" href="series.html"><i class="fas fa-plus"></i><span class="textoMenu">SERIES</span></a></li>
+	
+</ul>
+
+</nav>
+
+
+<div id="contenedor">
+
+	<img id="visorImagen" >
+	
+	<div class="banner">
+	
+		<p style="text-align: center;" class="textoBannerGrande">MEJOR VALORADOS</p>
+	</div>
+
+  <!-- contenedorNoticias va contener las tres cajitas de noticias-->
+  <div class="contenedorNoticias">
+  		<!-- Noticia 1-->
+		<div class="cajaNoticia">
+			<p class="tituloNoticia">JUEGO DE TRONOS</p>
+       		<p class="subtituloNoticia">Cuando se juega al Juego de Tronos, solo se puede ganar o morir.</p>  
+       		<div class="contenidoNoticia">
+       			<div class="imagenNoticia"><img  src="imagenes/trono.jpg" ></div>
+       			<p class="textoNoticia">En un mundo fantástico y en un contexto medieval varias familias de la nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el poder.
+
+					Mientras tiene lugar una guerra civil para conseguir el poder, detrás del Muro que divide el reino de Poniente y la zona norte, los muertos amenazan con librar la batalla contra los vivos.
+				</p>
+       			
+       		</div>	
+       		<div class="informacion">
+	       		<ul >
+	       			<li><a onclick="AbrirVentanaModal('Verde')" href="#" ><i class="fas fa-eye"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       		
+	   			</ul>
+			</div>	
+     	</div>
+
+		<!-- Noticia 2-->
+		<div class="cajaNoticia">
+			<p class="tituloNoticia">EL PADRINO</p>
+       		<p class="subtituloNoticia">Nunca digas lo que piensas a alguien fuera de la familia.</p>  
+       		<div class="contenidoNoticia">
+       			<div class="imagenNoticia"><img  src="imagenes/padrino.jpg" ></div>
+       			<p class="textoNoticia">América, años 40. Don Vito Corleone es el respetado y temido jefe de una de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: Connie, el impulsivo Sonny, el pusilánime Fredo y Michael, que no quiere saber nada de los negocios de su padre. Cuando Corleone, en contra de los consejos de 'Il consigliere' Tom Hagen, se niega a participar en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza entonces una violenta y cruenta guerra entre las familias mafiosas. </p>
+       		</div>	
+       		<div class="informacion">
+	       		<ul >
+	       			<li><a onclick="AbrirVentanaModal('Azul')" href="#" ><i class="fas fa-eye"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       		
+	   			</ul>
+			</div>	
+		</div>
+
+		<!-- Noticia 3-->
+		<div class="cajaNoticia">
+			<p class="tituloNoticia">DEATH NOTE</p>
+       		<p class="subtituloNoticia"><br>Yo soy la justicia</p>  
+       		<div class="contenidoNoticia">
+       			<div class="imagenNoticia"><img  src="imagenes/note.jpg" ></div>
+       			<p class="textoNoticia">Light Yagami es un excelente estudiante japonés que ha tenido una vida aburrida. Esto cambia radicalmente cuando encuentra tirado en el suelo un cuaderno conocido como Death Note, un cuaderno perdido por Ryuk, un Shinigami. Cualquier humano cuyo nombre esté escrito en el cuaderno morirá, y ahora Light ha decidido utilizar este poder para crear un mundo perfecto sin criminales. Pero cuando los criminales comienzan a morir de forma masiva, las autoridades envían al detective L en busca del asesino. Con L pisándole los talones, Podrá mantener Light su propósito incluso arriesgando su vida. </p>
+       		</div>	
+       		<div class="informacion">
+	       		<ul >
+	       			<li><a onclick="AbrirVentanaModal('Naranja')" href="#" ><i class="fas fa-eye"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       
+	   			</ul>
+			</div>	
+		</div>
+
+	
+
+	</div>
+
+
+
+
+</div>	
+
+
+
+<div id="ventanaModalVerde" class="ventanaModal">
+
+	<div id="contenedorMoralVerde" class="contenedorMoral">
+		<button id="BotonCerrarVerde" class="BotonCerrar" onclick="cerrarVentanaModal('Verde')" ><i class="fas fa-times"></i></button>
+	
+<h1>JUEGO DE TRONOS</h1><br>
+<p class="parrafoVentanaModal">
+	Juego de tronos se ha convertido en un fenómeno a nivel mundial porque ha sabído atraer a un público de edad variada al introducionos un mundo medieval con un buen toque de fantasía y acción.</p>
+
+<p>
+<br>	
+</p>
+<p class="parrafoVentanaModal">
+	Uno de los puntos fuertes de Juego de tronos son los dragones y efectos especiales que le pusieron a estos dando momentos, escenas y batallas memorables e indescriptibles a no ser que veas la serie.
+</p>
+<figure>
+	<img class="imagenVentanaModal" src="imagenes\trono2.jpg">
+</figure>
+<h2>¿Por qué ver juego de tronos?</h2>
+<br>
+<p class="parrafoVentanaModal">Es difícil quedarse con una sola cosa para ver juego de tronos: los aspectos mas destacados para ver esta maravillosa serie son:</p><br>
+<ul class="segunda_lista">
+	<li>Puntos a favor para ver la serie</li>
+		<ul class="lista_monumentos">
+			<li>Dragones</li>
+			<li>Batallas</li>
+			<li>Efectos especiales</li>
+			<li>Paisajes</li>
+			<li>Historia y desarrollo</li>
 		</ul>
-	</nav>
+	
+	<li>Principales Actores</li>	
+		<ul class="lista_monumentos">
+			<li>Ned Stark. (Sean Bean).</li>
+			<li>Jon Snow. (Kit Harington).</li>
+			<li>Arya Stark. (Maisie Williams).</li>
+			<li>Joffrey Baratheon. (Jack Gleeson).</li>
+			<li>Daenerys Targaryen. (Emilia Clarke).</li>
+			<li>Tyrion Lannister. (Peter Dinklage)</li>
+		</ul>
+	<li>Única pega</li>	
+		<ul class="lista_monumentos">
+			<li>Final apresurado.</li>
+		</ul>	
+</ul>	<br>
+<p class="guiaCierre">EL DINERO COMPRA EL SILENCIO DE UN HOMBRE POR UN TIEMPO. UNA FLECHA EN EL CORAZÓN LO COMPRA PARA SIEMPRE.</p>
 
-	<div id="contenedor">
-		<img id="visorImagen">
-		<div class="banner">
-			<p class="textoBannerGrande" style="text-align: center;">MEJOR VALORADOS</p>
-		</div>
-		<div class="contenedorNoticias">
-			<!-- Noticia 1 -->
-			<div class="cajaNoticia">
-				<p class="tituloNoticia">JUEGO DE TRONOS</p>
-				<p class="subtituloNoticia">Cuando se juega al Juego de Tronos, solo se puede ganar o morir.</p>
-				<div class="contenidoNoticia">
-					<div class="imagenNoticia"><img src="imagenes/trono.jpg"></div>
-					<p class="textoNoticia">En un mundo fantástico y en un contexto medieval varias familias de la
-						nobleza, se disputan el poder para dominar el territorio ficticio de Poniente (Westeros) y
-						tomar el control de los Siete Reinos desde el Trono de Hierro, lugar donde el rey ejerce el
-						poder.
-						Mientras tiene lugar una guerra civil para conseguir el poder, detrás del Muro que divide el
-						reino de Poniente y la zona norte, los muertos amenazan con librar la batalla contra los
-						vivos.</p>
-				</div>
-				<div class="informacion">
-					<ul>
-						<li><a onclick="AbrirVentanaModal('Verde')" href="#"><i class="fas fa-eye"></i></a></li>
-						<li><a href="formulario_contacto.html"
-								onclick="return popitupformulario('formulario_contacto.html')"><i
-									class="fas fa-envelope"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- Noticia 2 -->
-			<div class="cajaNoticia">
-				<p class="tituloNoticia">EL PADRINO</p>
-				<p class="subtituloNoticia">Nunca digas lo que piensas a alguien fuera de la familia.</p>
-				<div class="contenidoNoticia">
-					<div class="imagenNoticia"><img src="imagenes/padrino.jpg"></div>
-					<p class="textoNoticia">América, años 40. Don Vito Corleone es el respetado y temido jefe de una
-						de las cinco familias de la mafia de Nueva York. Tiene cuatro hijos: Connie, el impulsivo
-						Sonny, el pusilánime Fredo y Michael, que no quiere saber nada de los negocios de su padre.
-						Cuando Corleone, en contra de los consejos de 'Il consigliere' Tom Hagen, se niega a
-						participar en el negocio de las drogas, el jefe de otra banda ordena su asesinato. Empieza
-						entonces una violenta y cruenta guerra entre las familias mafiosas.</p>
-				</div>
-				<div class="informacion">
-					<ul>
-						<li><a onclick="AbrirVentanaModal('Azul')" href="#"><i class="fas fa-eye"></i></a></li>
-						<li><a href="formulario_contacto.html"
-								onclick="return popitupformulario('formulario_contacto.html')"><i
-									class="fas fa-envelope"></i></a></li>
-					</ul>
-				</div>
-			</div>
-			<!-- Noticia 3 -->
-			<div class="cajaNoticia">
-				<p class="tituloNoticia">DEATH NOTE</p>
-				<p class="subtituloNoticia"><br>Yo soy la justicia</p>
-				<div class="contenidoNoticia">
-					<div class="imagenNoticia"><img src="imagenes/note.jpg"></div>
-					<p class="textoNoticia">Light Yagami es un excelente estudiante japonés que ha tenido una vida
-						aburrida. Esto cambia radicalmente cuando encuentra tirado en el suelo un cuaderno conocido
-						como Death Note, un cuaderno perdido por Ryuk, un Shinigami. Cualquier humano cuyo nombre
-						esté escrito en el cuaderno morirá, y ahora Light ha decidido utilizar este poder para crear
-						un mundo perfecto sin criminales. Pero cuando los criminales comienzan a morir de forma
-						masiva, las autoridades envían al detective L en busca del asesino. Con L pisándole los
-						talones, Podrá mantener Light su propósito incluso arriesgando su vida.</p>
-				</div>
-				<div class="informacion">
-					<ul>
-						<li><a onclick="AbrirVentanaModal('Naranja')" href="#"><i class="fas fa-eye"></i></a></li>
-						<li><a href="formulario_contacto.html"
-								onclick="return popitupformulario('formulario_contacto.html')"><i
-									class="fas fa-envelope"></i></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
+
 	</div>
-	<!-- Modal Verdes -->
-	<div id="ventanaModalVerde" class="ventanaModal">
-		<div id="contenedorMoralVerde" class="contenedorMoral">
-			<button id="BotonCerrarVerde" class="BotonCerrar" onclick="cerrarVentanaModal('Verde')"><i
-					class="fas fa-times"></i></button>
-			<h1>JUEGO DE TRONOS</h1><br>
-			<p class="parrafoVentanaModal">Juego de tronos se ha convertido en un fenómeno a nivel mundial porque ha
-				sabído atraer a un público de edad variada al introducionos un mundo medieval con un buen toque de
-				fantasía y acción.</p>
-			<p><br></p>
-			<p class="parrafoVentanaModal">Uno de los puntos fuertes de Juego de tronos son los dragones y efectos
-				especiales que le pusieron a estos dando momentos, escenas y batallas memorables e indescriptibles a
-				no ser que veas la serie.</p>
-			<figure>
-				<img class="imagenVentanaModal" src="imagenes/trono2.jpg">
-			</figure>
-			<p><br></p>
-			<p class="parrafoVentanaModal">Juego de tronos ha sido elogiado por la crítica por su complejidad de
-				personajes, historia, efectos especiales y ha ganado numerosos premios.</p>
-		</div>
+</div>
+
+<div id="ventanaModalAzul" class="ventanaModal">
+
+	<div id="contenedorMoralAzul" class="contenedorMoral">
+<button onclick="cerrarVentanaModal('Azul')" ><i class="fas fa-times"></i></button>
+<main class="ventanaModal">
+<h1>EL PADRINO</h1><br>
+<p class="parrafoVentanaModal">
+	El padrino se ha convertido en la película mejor valorada de todos los tiempos gracias a una buena visión del mundo de la mafia en EEUU en la época de 1945 en adelante. </p>
+
+<p>
+<br>	
+</p>
+<p class="parrafoVentanaModal">
+	La historia logra atraparte desde el minuto uno gracias a las frases y el aire de misterio y respeto que ofrece Vito Corleone frente a las demás familias y personas que aparecen a lo largo de la película.
+</p>
+<figure>
+	<img class="imagenVentanaModal" src="imagenes\padrino2.webp">
+</figure>
+<h2>¿Por qué ver El Padrino?</h2>
+<br>
+<p class="parrafoVentanaModal">Es difícil quedarse con una sola cosa de esta película:</p><br>
+<ul class="segunda_lista">
+	<li>Puntos a favor para ver la película</li>
+		<ul class="lista_monumentos">
+			<li>Mafia</li>
+			<li>Buena trama</li>
+			<li>frases memorables</li>
+			<li>Buena ambientación</li>
+			<li>Personajes icónicos y queridos</li>
+		</ul>
+	
+	<li>Principales Actores</li>	
+		<ul class="lista_monumentos">
+			<li>Vito Corleone. (Marlon Brando).</li>
+			<li>Connie. (Talia Shire).</li>
+			<li>Sonny. (James Caan).</li>
+			<li>Fredo. (John Cazale).</li>
+			<li>Michael. (Al Pacino).</li>
+			<li>Tom Hagen. (Robert Duvall).</li>
+		</ul>
+	<li>Pega</li>	
+		<ul class="lista_monumentos">
+			<li>Película antigua para los que no les gusten</li>
+		</ul>	
+</ul>	<br>
+<p class="guiaCierre">"LE HARÉ UNA OFERTA QUE NO PODRÁ RECHAZAR"</p>
+</main>
 	</div>
-	<!-- Modal Azul -->
-	<div id="ventanaModalAzul" class="ventanaModal">
-		<div id="contenedorMoralAzul" class="contenedorMoral">
-			<button id="BotonCerrarAzul" class="BotonCerrar" onclick="cerrarVentanaModal('Azul')"><i
-					class="fas fa-times"></i></button>
-			<h1>EL PADRINO</h1><br>
-			<p class="parrafoVentanaModal">Es una de las películas de gánsters más famosas y posiblemente la más
-				influyente. El Padrino presenta la historia de la familia Corleone y el drama que conlleva.</p>
-			<p><br></p>
-			<p class="parrafoVentanaModal">Con una dirección magistral de Francis Ford Coppola, la película toca
-				temas como el poder, la lealtad y la familia, con actuaciones inolvidables de Marlon Brando y Al
-				Pacino.</p>
-			<figure>
-				<img class="imagenVentanaModal" src="imagenes/padrino2.jpg">
-			</figure>
-			<p><br></p>
-			<p class="parrafoVentanaModal">El Padrino ha dejado una marca indeleble en la cultura popular y sigue
-				siendo una obra maestra del cine.</p>
-		</div>
+</div>
+
+
+<div id="ventanaModalNaranja" class="ventanaModal">
+
+	<div id="contenedorMoralNaranja" class="contenedorMoral">
+		<button id="BotonCerrarNaranja" class="BotonCerrar" onclick="cerrarVentanaModal('Naranja')" ><i class="fas fa-times"></i></button>
+	
+<h1>Death Note</h1><br>
+<p class="parrafoVentanaModal">
+	Una obra que fascinó a todos los espectadores y que se ha convertido en una serie-anime de culto, la cúal jovenes y personas mayores han visto aunque no les guste el anime.  </p>
+
+<p>
+<br>	
+</p>
+<p class="parrafoVentanaModal">
+	Con dos de los personajes mas famosos de la historia de anime esta serie en su primera temporada cuenta con una calificación casi perfecta por la buena trama y enfrentaimento de los 2 protagonistas que lleva a momentos épicos.	
+</p>
+<figure>
+	<img class="imagenVentanaModal" src="imagenes\note2.jpg">
+</figure>
+<h2>¿Por qué ver Death Note?</h2>
+<br>
+<p class="parrafoVentanaModal">Es difícil quedarse con una sola cosa en esta obra de arte ya que es casi perfecta en todos los sentidos.</p><br>
+<ul class="segunda_lista">
+	<li>Puntos a favor para ver esta obra de arte</li>
+		<ul class="lista_monumentos">
+			<li>Mejor antagonista</li>
+			<li>Mejor protagonista</li>
+			<li>Serie de culto</li>
+			<li>Historia maravillosa</li>
+			<li>Momentos épicos</li>
+		</ul>
+	
+	<li>Personajes</li>	
+		<ul class="lista_monumentos">
+			<li>Light Yagami (KIRA)</li>
+			<li>Lawliet (L)</li>
+			<li>Misa Amane</li>
+			<li>Watari</li>
+			<li>Soichiro Yagami</li>
+			<li>Matsuda</li>		
+		</ul>
+	<li>Pega</li>	
+		<ul class="lista_monumentos">
+			<li>Segunda temporada</li>
+		</ul>	
+</ul>	<br>
+<p class="guiaCierre">
+	"NUNCA PUEDES GANAR SIEMPRE ESTÁS A LA DEFENSIVA. ¡PARA GANAR, TIENES QUE ATACAR!"</p>
+
 	</div>
-	<!-- Modal Naranja -->
-	<div id="ventanaModalNaranja" class="ventanaModal">
-		<div id="contenedorMoralNaranja" class="contenedorMoral">
-			<button id="BotonCerrarNaranja" class="BotonCerrar" onclick="cerrarVentanaModal('Naranja')"><i
-					class="fas fa-times"></i></button>
-			<h1>DEATH NOTE</h1><br>
-			<p class="parrafoVentanaModal">Death Note es un thriller psicológico que sigue a Light Yagami en su
-				misión por purgar el mundo de criminales con la ayuda de un cuaderno sobrenatural.</p>
-			<p><br></p>
-			<p class="parrafoVentanaModal">La serie presenta un fascinante juego de inteligencia entre Light y el
-				detective L, explorando temas de justicia, moralidad y el poder absoluto.</p>
-			<figure>
-				<img class="imagenVentanaModal" src="imagenes/note2.jpg">
-			</figure>
-			<p><br></p>
-			<p class="parrafoVentanaModal">Con su trama intrigante y personajes complejos, Death Note se ha ganado
-				un lugar especial en el mundo del anime y más allá.</p>
-		</div>
-	</div>
+</div>
+
 </body>
-
 </html>
