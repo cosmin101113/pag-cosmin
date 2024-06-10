@@ -1,14 +1,14 @@
 var tiempoPermanecia = 2000;
 		var contador = 1;
 		/*definimos los 3 manejadores de evento*/
-		function AbrirVentanaModal(ciudad)
+		function AbrirVentanaModal(abrir)
 		{
 			
-			if(ciudad == "Verde")
+			if(abrir == "Verde")
 			{	
 			var cModal=document.getElementById("ventanaModalVerde");/*cuando yo quiero que se abra tengo asignarle la clase visible*/
 			}
-			else if( ciudad =="Azul")
+			else if( abrir =="Azul")
 			{
 				var cModal=document.getElementById("ventanaModalAzul");
 			}	
@@ -21,22 +21,22 @@ var tiempoPermanecia = 2000;
 		}
 
 		
-		function cerrarVentanaModal(ciudad)
+		function cerrarVentanaModal(cerrar)
 
 		{
 
 			
-			if (ciudad ="Verde")
+			if (cerrar ="Verde")
 			{	
 			var cModal=document.getElementById("ventanaModalVerde");
 			cModal.classList.remove("visible");
 			}
-			if (ciudad ="Azul")
+			if (cerrar ="Azul")
 			{
 			var cModal=document.getElementById("ventanaModalAzul");
 			cModal.classList.remove("visible");
 			}
-			if(ciudad ="Naranja") 
+			if(cerrar ="Naranja") 
 			{
 				var cModal=document.getElementById("ventanaModalNaranja");
 				cModal.classList.remove("visible");
