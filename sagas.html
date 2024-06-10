@@ -24,9 +24,9 @@
 <nav id="navMenu" >
 
 <ul id="menu" >
-	<li><a id="inicio" href="index.html"><i class="fas fa-home"></i><span class="textoMenu">INICIO</span></a></li>
-	<li><a id="europa" href="sagas.html"><i class="fas fa-eye"></i><span class="textoMenu">SAGAS</span></a></li>
-	<li><a id="vuelos" href="series.html"><i class="fas fa-plus"></i><span class="textoMenu">SERIES</span></a></li>
+	<li><a id="principio" href="index.html"><i class="fas fa-film" style="font-size:48px;color:rgb(148, 45, 169)"></i><span class="textoMenu">RECOMENDADOS</span></a></li>
+	<li><a id="sagas" href="sagas.html"><i class="fas fa-tv" style="font-size:40px;color:rgb(123, 193, 32)"></i><span class="textoMenu">TOP SAGAS</span></a></li>
+	<li><a id="series" href="series.html"><i class="fas fa-heart" style="font-size:48px;color:red"></i><span class="textoMenu">SERIES FAVORITAS</span></a></li>
 
 </ul>
 
@@ -39,7 +39,7 @@
 	
 	<div class="banner">
 		
-		<p style="text-align: center;" class="textoBannerGrande">PELÍCULAS</p>
+		<p style="text-align: center;" class="textoBannerGrande">MEJORES TRILOGÍAS</p>
 	</div>
 
   <!-- contenedorNoticias va contener las tres cajitas de noticias-->
@@ -56,8 +56,8 @@
        		</div>	
        		<div class="informacion">
 	       		<ul >
-	       			<li><a onclick="AbrirVentanaModal('Verde')" href="#"><i class="fas fa-eye"></i></a></li>
-	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       			<li><a onclick="AbrirVentanaModal('Verde')" href="#"><i class="fas fa-folder-open" style="font-size:30px;color:rgb(6, 6, 6)"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-edit" style="font-size:30px;color:rgb(10, 10, 10)"></i></a></li>
 	       	
 	   			</ul>
 			</div>	
@@ -73,8 +73,8 @@
        		</div>	
        		<div class="informacion">
 	       		<ul >
-	       			<li><a onclick="AbrirVentanaModal('Azul')" href="#" ><i class="fas fa-eye"></i></a></li>
-	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       			<li><a onclick="AbrirVentanaModal('Azul')" href="#" ><i class="fas fa-folder-open" style="font-size:30px;color:rgb(6, 6, 6)"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-edit" style="font-size:30px;color:rgb(10, 10, 10)"></i></a></li>
 	       	
 	   			</ul>
 			</div>	
@@ -90,8 +90,8 @@
        		</div>	
        		<div class="informacion">
 	       		<ul >
-	       			<li><a onclick="AbrirVentanaModal('Naranja')" href="#" ><i class="fas fa-eye"></i></a></li>
-	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-envelope"></i></a></li>
+	       			<li><a onclick="AbrirVentanaModal('Naranja')" href="#" ><i class="fas fa-folder-open" style="font-size:30px;color:rgb(6, 6, 6)"></i></a></li>
+	       			<li><a href="formulario_contacto.html" onclick="return popitupformulario('formulario_contacto.html')"><i class="fas fa-edit" style="font-size:30px;color:rgb(10, 10, 10)"></i></a></li>
 	   
 	   			</ul>
 			</div>	
@@ -127,7 +127,7 @@
 <br>
 <ul class="segunda_lista">
 	<li>PELÍCULAS POR ORDEN DE EPISODIOS</li>
-		<ul class="lista_monumentos">
+		<ul class="lista">
 			<br>
 			<li>Star Wars: Episodio I - La amenaza fantasma (1999):
 				Dos caballeros Jedi descubren a Anakin Skywalker, un niño con un gran potencial en la Fuerza, mientras intentan proteger a la Reina Amidala de una invasión.</li>
@@ -166,7 +166,7 @@
 <div id="ventanaModalAzul" class="ventanaModal">
 
 	<div id="contenedorMoralAzul" class="contenedorMoral">
-<button class="BotonCerrar" onclick="cerrarVentanaModal('Azul')" ><i class="fas fa-times"></i></button>
+<button class="BotonCerrar" onclick="cerrarVentanaModal('Verde')" ><i class="fas fa-times"></i></button>
 <main class="ventanaModal">
 <h1>HARRY POTTER</h1><br>
 <p class="parrafoVentanaModal">
@@ -186,7 +186,7 @@
 <br>
 <ul class="segunda_lista">
 	<li>PELÍCULAS SEGUN EL ORDEN CRONOLÓGICO</li>
-		<ul class="lista_monumentos">
+		<ul class="lista">
 			<br>
 			<li>Harry Potter y la piedra filosofal (2001):
 				Harry descubre que es un mago y asiste a la escuela de magia Hogwarts, donde hace amigos y enemigos, y descubre la existencia de la piedra filosofal, un objeto con poderes mágicos extraordinarios.</li>
@@ -242,7 +242,7 @@
 <ul class="segunda_lista">
 	<li>EL SEÑOR DE LOS ANILLOS ORDEN CRONOLÓGICO DE LAS PELÍCULAS</li>
 	<br>
-		<ul class="lista_monumentos">
+		<ul class="lista">
 			<li>El Señor de los Anillos: La Comunidad del Anillo (2001):
 				Frodo Bolsón, un hobbit del tranquilo pueblo de la Comarca, hereda un anillo mágico y peligroso de su tío Bilbo. El mago Gandalf descubre que el anillo es el Anillo Único, creado por el malvado Sauron para dominar la Tierra Media. Frodo se une a un grupo diverso, la Comunidad del Anillo, que incluye hobbits, humanos, un enano y un elfo, para llevar el anillo al Monte del Destino, donde puede ser destruido. A lo largo de su viaje, enfrentan numerosos peligros y amenazas.</li>
 				<br>

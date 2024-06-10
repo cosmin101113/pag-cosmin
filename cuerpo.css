@@ -12,15 +12,18 @@ body{
 
 }
 .index-body{
-    background-image: url(imagenes/arcane2.webp);
+    background-image: url(imagenes/dragon3.jpg);
     background-repeat: repeat-x;
+    background-attachment: fixed;
     background-size: cover;	
 }
 .sagas-body{
-    background-image: url(imagenes/anillo.jpg);
+    background-image: url(imagenes/estrella2.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;	
 }
+
 img{
     opacity: 0.8;	
     width: 100vw;
@@ -61,15 +64,21 @@ div p.textoBannerGrande{
     padding: 0;
     padding-top: 0px;
     margin: 0;
-    font-size: 3em;
+    font-size: 1.75em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: yellow;
 }
+@media (max-width: 768px) {
+    div.banner {
+        font-size: 1em; /* Cambia el tamaño de la fuente del div en dispositivos móviles */
+    }
+}
+
 
 
 div.contenedorNoticias {
     position: absolute;
     text-align: center;
-    background-color: rgba(155, 255, 88, 0.5);
     border-radius: 4px;
     margin-top: 35px;
     left: 50%;
@@ -88,6 +97,25 @@ div.contenedorNoticias {
 }
 
 
+div.contenedorNoticias3 {
+    position: absolute;
+    text-align: center;
+    background-color: rgba(155, 255, 88, 0.5);
+    border-radius: 4px;
+    margin-top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 1100px; /* Puedes ajustar esto según tu preferencia */
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+    justify-content: space-between; /* Distribuye los elementos con un espacio uniforme */
+}
+@media (max-width: 1180px) {
+    div.contenedorNoticias3 {
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+}
 
 
 div.cajaNoticia {
@@ -225,23 +253,40 @@ p{
 /* Ventana Modal*/	
 
 div.ventanaModal {
-    display: flex; /*esto es para centrar contenedorMoral*/
-    justify-content: center; /*centro horizontalmente contenedorMoral*/
-    align-items: center; /*Centro verticalmente contenedorMoral*/
-    visibility:hidden; /*Y esto es lo que hace que originalmente hace que ya no se vea*/
-    opacity: 0; /*si no quiero que se vea al principio la visible la opacidad tiene que ser cero, OJO que el contenedor está*/
-    transition: all 2s; /*si ponemos all se aplica al abrir y al cerrar, y si lo pongo en la clase visible puedo poner velocidades diferentes*/
-    position: fixed; 
-    z-index: 1; /*está por delante del body*/
-    padding-top: 30%;
+    display: flex; /* Para centrar horizontalmente contenedorModal */
+    justify-content: center; /* Centro horizontalmente contenedorModal */
+    align-items: flex-start; /* Alinea el contenido al inicio de la ventana (parte superior) */
+    visibility: hidden; /* Oculta la ventana modal inicialmente */
+    opacity: 0; /* Establece la opacidad inicial a cero */
+    transition: visibility 0s, opacity 2s; /* Transición para la visibilidad y opacidad */
+    position: fixed;
+    z-index: 1; /* Coloca la ventana modal delante del body */
     left: 0;
     top: 0;
-    bottom: 0;
-    
-    overflow: auto; /*Por si tengo contenido dentro del contenedor que exceda del contenido, pongo scroll automático */
-
-
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
+    height: 100%; /* Ocupa todo el alto de la pantalla */
+    overflow: auto; /* Permite el desplazamiento automático si el contenido excede */
+    padding-top: 20px; /* Espacio superior para separar el contenido del borde superior */
 }
+
+/* Clase para mostrar la ventana modal */
+div.ventanaModal.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilo del contenido dentro de la ventana modal */
+div.contenedorModal {
+    background-color: rgb(241, 190, 231); /* Fondo blanco para el contenido */
+    margin: 0 auto; /* Asegura el centrado horizontal */
+    padding: 20px; /* Espacio interno */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para el contenido */
+    max-width: 80%; /* Máximo ancho del contenido */
+    max-height: calc(100% - 40px); /* Máximo alto del contenido, con un margen de 20px en la parte superior e inferior */
+    overflow: auto; /* Desplazamiento automático si el contenido excede */
+}
+
 div.ventanaModal.visible 
 {
     visibility: visible;
@@ -250,7 +295,10 @@ div.ventanaModal.visible
 
 }	
 div.ventanaModal div.contenedorMoral {
-    background-color: white;
+    background-image: url(imagenes/gris4.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     padding: 20px;
     border: 2px solid lightgray;
     box-shadow: 2px 2px 2px darkred;
@@ -275,3 +323,30 @@ div.ventanaModal button.BotonCerrar{
     display: block; /* Asegura que la imagen sea un bloque para aplicar margin auto */
 }
 
+ul.lista {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
+
+ul.lista li {
+    margin-bottom: 15px;
+}
+
+ul.lista li strong {
+    display: block;
+    font-weight: bold;
+}
+
+ul.lista2 {
+    list-style-type:disc;
+    padding-left: 20px;
+}
+
+ul.lista2 li {
+    margin-bottom: 15px;
+}
+
+ul.lista2 li strong {
+    display: block;
+    font-weight: bold;
+}

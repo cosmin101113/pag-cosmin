@@ -1,122 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>DEJANOS UN COMENTARIO</title>
-	<meta charset="utf-8">
-	<link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css">
-	<link href="conexion.php" rel="impor" />
-	<style type="text/css">
-		*{
-			margin:0px;
-			padding:0px;
-			font-family: 'Roboto',arial, sans-serif;
-			font-size:10pt;
-			color:#333;
-		}
-		body{
-			
-			background-color: #e5e5e5;		
-		}
-		div.cabeceraFormulario{
-			float:left;
-			width:390px; 
-			
-		}
-		div#mensajeCabeceraFormulario{
-			background-color:#8419ab;
-			margin:0px 20px 0px 20px;
-			border-top-left-radius:4px;
-			border-top-right-radius:4px;
-		}
-		p.textoCabeceraFormulario{
-			font-size:22px;
-			font-weight:300;
-			color:#fff;
-			padding:20px 0px 0px 20px;}
-	
-		p.subtextoCabeceraFormulario{
-			font-size:14px;
-			font-weight:300;
-			color:#fff;
-			text-align:justify;
-			padding:10px 20px 20px 20px;
-		}
-		div.formatoFormulario{
-			padding:150px 20px 20px 20px;
-			width:350px;
-			height:auto;
-			background-color:#fff;
-			margin:0px 20px 0px 20px;
-			opacity:none;
-		}
-		p.textoTituloformulario{
-			font-size:22px;
-			font-weight:300;
-			color:#8d1eb6;
-			padding-top: 20px
-		}
-		.formulario input {	
-			font-size:14px;
-			font-weight:300;
-			border:none;
-			background-color:#fff;
-			border-bottom:1px solid #d9d9d9;
-			width:320px;
-			padding:10px 10px 10px 10px;
-			margin-bottom:5px;
-			color:#b0b0b0;
-		}
-		textarea#comentarios{
-			padding:10px;
-			font-weight:300;
-			color:#999;
-			border-bottom:1px solid #d9d9d9;
-			border-left:0px;
-			border-right:0px;
-			border-top:0px;
-			border:0px, 0px, 0px, 0px;	
-			margin-bottom:20px;
-		}
-		
+    <title>DEJANOS UN COMENTARIO</title>
+    <meta charset="utf-8">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900' rel='stylesheet' type='text/css'>
+    <link href="conexion.php" rel="impor" />
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', arial, sans-serif;
+            font-size: 10pt;
+            color: #333;
+        }
 
-	</style>
+        body {
+            background-image: url(imagenes/kilo2.jpg);
+            background-repeat: no-repeat;
+			background-attachment: fixed;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .contenedorFormulario {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .cabeceraFormulario {
+			background-image: url(imagenes/cielo2.jpeg); /* Imagen de fondo */
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .textoCabeceraFormulario {
+            font-size: 22px;
+            font-weight: 300;
+            color: #fff;
+        }
+
+        .subtextoCabeceraFormulario {
+            font-size: 14px;
+            font-weight: 300;
+            color: #fff;
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        .formatoFormulario {
+			background-image: url(imagenes/cielo.png); /* Imagen de fondo */
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .formulario input,
+        textarea#comentario {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #32b9d7;
+            box-sizing: border-box;
+            background-image: url(imagenes/pink.png); /* Imagen de fondo */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: left; /* Alinea la imagen a la izquierda */
+        }
+
+        .formulario button {
+            padding: 10px 20px;
+            background-color: #32b9d7;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 300;
+        }
+    </style>
 </head>
 <body>
 
-<div class="cabeceraFormulario" id="mensajeCabeceraFormulario" style="width:390px;"> 
-	
+<div class="contenedorFormulario">
+    <div class="cabeceraFormulario">
+        <p class="textoCabeceraFormulario">DEJAME TU RECOMENDACIÓN Y UN COMENTARIO</p>
+        <p class="subtextoCabeceraFormulario">Puedes dejarme tu película o serie favorita con un comentario de por que te gusta tanto y debería verla también.</p>
+    </div>
 
-    <p class="textoCabeceraFormulario">DEJAME TU COMENTARIO O RECOMENDACIÓN</p>
-    <p class="subtextoCabeceraFormulario">Con tus datos puedes dejarme un comentario sobre que te parecen mis recomendaciones o hacerme una recomendacón.</p>
+    <div class="formatoFormulario">
+        <p class="textoTituloformulario" id="azul">CONTACTO: </p>
+        <form class="formulario" action="buscador.php" method="POST">
+            <!-- Insertar Películas -->
+            <legend class="subtituloformulario">INSERTAR PELÍCULAS, SERIES O ANIMES</legend>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="Nombre" size="50"><br>
+
+            <label for="valoracion">Valoración:</label><br>
+            <input type="text" id="valoracion" name="Valoración" size="50"><br>
+
+            <label for="genero">Género:</label><br>
+            <input type="text" id="genero" name="Género" size="50"><br>
+
+            <label for="anio">Año:</label><br>
+            <input type="text" id="anio" name="Año" size="50"><br>
+
+            <label for="director">Director:</label><br>
+            <input type="text" id="director" name="Director" size="50"><br>
+
+            <label for="comentario">Comentario:</label><br>
+            <textarea id="comentario" name="Comentario" rows="4" cols="50"></textarea><br>
+
+            <button type="submit" name="insert">Insertar</button>
+        </form>
+    </div>
 </div>
 
-
-<div class="formatoFormulario">
-
-<p class="textoTituloformulario" id="azul">CONTACTO: </p>
-<form action="cliente.php" class="formulario" id="formulario" method="post" target="_self">
-        
-	    <input name="Nombre" type="text" id="nombre" size="50" placeholder="Nombre" />
-		<input name="Apellidos" type="text" id="apellidos" size="50" placeholder="Apellidos" />
-		<input name="Nif" type="text" id="dni" size="9" placeholder="DNI" />
-        <input name="Telefono" type="tel" id="telefono" size="9" placeholder="Telefono Contacto"/>
-        <input name="Email" type="email" id="email" size="50" placeholder="Email"/>
-
-
-<p class="textoTituloformulario" id="azul1">RECOMENDACIONES:</p>
-
-	<input name="Destino" type="text" id="destino" size="20" placeholder="TÍTULO"/>
-    <input name="Plazas" type="text" id="pax" size="10" placeholder="DIRECTOR"/>
-    <input name="CiudadOrigen" type="text" id="origen" size="10" placeholder="GÉNERO"/>
-
-<p class="textoTituloformulario" id="azul2"> COMENTARIOS: </p>
-    <textarea name="Comentarios" cols="42" rows="3" id="comentarios"></textarea>
-    
-<p>
-<input type="submit" name="submit" id="submit" value="Enviar">
-</p>    
-    
-</form> 
-</div>	
 </body>
 </html>
